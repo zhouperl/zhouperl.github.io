@@ -72,13 +72,13 @@ netease_comment: false
 
 # Google Analytics
 ga_track_id: 'UA-49627206-1'            # Format: UA-xxxxxx-xx
-ga_domain: huangxuan.me
+ga_domain: sunpear.cn
 
 
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-#sidebar-about-description: "perl  <br> An UI/Frontend dev & designer accidentally growing into a compiler/PL hacker."
+sidebar-about-description: "perl  <br> An UI/Frontend dev & designer accidentally growing into a compiler/PL hacker."
 #sidebar-avatar: https://github.com/Huxpro.png # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -103,9 +103,6 @@ page-mathjax: false
 # Friends
 friends: [
     {
-    #     title: "Su",
-    #     href: "http://su.gallery/"
-    # },{
         title: "百度",
         href: "http://www.baidu.com/"
     },{
