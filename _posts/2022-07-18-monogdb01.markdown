@@ -2,7 +2,7 @@
 layout:     post
 title:      "记录一次MongoDB IO异常问题"
 date:       2022-07-18
-author:     "Hux"
+author:     "perl"
 header-img: "img/post-bg-e2e-ux.jpg"
 lang: en
 tags:
