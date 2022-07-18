@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "MongoDB集群问题排查"
+title:      "记录一次MongoDB IO异常问题"
 date:       2015-03-31 
 author:     "Hux"
 header-img: "img/post-bg-e2e-ux.jpg"
