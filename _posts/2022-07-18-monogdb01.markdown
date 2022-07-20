@@ -73,6 +73,8 @@ MongoDB的查询读写机制，默认使用的是WiredTiger存储引擎
 
 由此推断出是缓存不足导致查询直接读写磁盘导致IO被几乎打满。
 
+#### 修复
+
 开始逐步降低WiredTiger申请内存。
 
 还好MongoDB支持动态修改，否则还需要在晚上重启服务才能验证
@@ -87,7 +89,7 @@ MongoDB的查询读写机制，默认使用的是WiredTiger存储引擎
 db.adminCommand({setParameter: 1, wiredTigerEngineRuntimeConfig: "cache_size=XXG"})
 ```
 
-总结避免再次踩坑：
+#### 总结避免再次踩坑：
 
  1.    WiredTiger cache，而非mongod进程的内存用量上限。MongoDB同时使用WT cache和文件系统cache，WT cache_size相对于物理内存总量不要设置的太满，需要留有一定内存为操作系统所用，若缓存不够用会直接去从磁盘读取数据导致查询性能下降，甚至服务不可用。
 
