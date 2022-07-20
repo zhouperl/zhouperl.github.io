@@ -85,3 +85,5 @@ db.adminCommand({setParameter: 1, wiredTigerEngineRuntimeConfig: "cache_size=XXG
 
 3.    排查问题需要注意到各个细节，一个很小的细节能改变排查思路。
 
+公众号![图片](./img/sunpear.png)
+
